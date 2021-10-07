@@ -1,0 +1,138 @@
+@media (max-width: 991px) {
+    .header {
+        justify-content: space-around;
+    }
+    .promo {
+        padding-bottom: 40px;
+        min-height: 600px;
+        &__wrapper {
+            margin-top: 50px;
+            align-items: center;
+        }
+        h1 {
+            font-size: 32px;
+        }
+        .button_main {
+            margin-top: 43px;
+            width: 250px;
+            font-size: 15px;
+        }
+    }
+    .benefits {
+        padding: 50px 0 65px 0;
+        &__header {
+            margin-bottom: 50px;
+        }
+    }
+
+}
+
+@media (max-width: 767px) {
+    .header {
+        &__logo {
+            width: 180px;
+        }
+        &__official {
+            span {
+                font-size: 15px;
+            }
+        }
+        &__phone {
+            font-size: 15px;
+        }
+    }
+    .promo {
+        min-height: 530px;
+        padding-bottom: 25px;
+        &__wrapper {
+            margin-top: 35px;
+        }
+        h1 {
+            font-size: 27px;
+        }
+        h2 {
+            font-size: 21px;
+        }
+        &__icons {
+            margin-top: 40px;
+        }
+        .button_main {
+            width: 215px;
+            font-size: 14px;
+        }
+    }
+    .benefits {
+        padding: 35px 0 40px 0;
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__icon {
+            margin-bottom: 10px;
+        }
+        &__subheader {
+            margin-bottom: 10px;
+        }
+        &__desc {
+            margin-bottom: 15px;
+        }
+        h2 {
+            font-size: 26px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        flex-direction: column;
+        &__logo {
+            margin-bottom: 15px;
+        }
+        &__official {
+            font-size: 11px;
+            margin-bottom: 15px;
+            span {
+                font-size: 11px;
+            }
+        }
+        &__contacts {
+            align-items: center;
+        }
+        &__phone {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+    }
+    .promo {
+        &__wrapper {
+            margin-top: 25px;
+        }
+        h1 {
+            font-size: 23px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 17px;
+            margin-top: 0;
+        }
+        &__icons {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+        &__icon {
+            margin-bottom: 10px;
+        }
+        .button_main {
+            margin-top: 20px;
+        }
+    }
+    .benefits {
+        padding-bottom: 20px;
+        h2 {
+            font-size: 23px;
+            margin-bottom: 15px;
+        }
+    }
+}
