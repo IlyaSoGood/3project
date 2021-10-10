@@ -1,3 +1,9 @@
+@media (max-width: 1200px) {
+    .consultation {
+        padding-left: 100px;
+    }
+}
+
 @media (max-width: 991px) {
     .header {
         justify-content: space-around;
@@ -20,11 +26,21 @@
     }
     .benefits {
         padding: 50px 0 65px 0;
-        &__header {
+        h2 {
             margin-bottom: 50px;
         }
     }
-
+    .consultation {
+        padding: 60px 0 60px 100px;
+        min-height: 600px;
+        h2 {
+            font-size: 29px;
+            margin-bottom: 37px;
+        }
+        .feed-form {
+            width: 270px;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -81,6 +97,26 @@
             margin-bottom: 30px;
         }
     }
+    .consultation {
+        padding: 50px 130px 50px 130px;
+        min-height: 550px;
+        h2 {
+/*             margin: 0 auto;
+            width: 500px; */
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        &__descr {
+            text-align: center;
+            font-size: 17px;
+        }
+        .feed-form {
+            margin: 0 auto;
+            margin-top: 36px;
+            width: 250px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -133,6 +169,22 @@
         h2 {
             font-size: 23px;
             margin-bottom: 15px;
+        }
+    }
+    .consultation {
+        padding: 40px 30px 40px 30px;
+        min-height: 500px;
+        h2 {
+            font-size: 18px;
+        }
+        &__descr {
+            font-size: 15px;
+        }
+        .feed-form {
+            width: 215px;
+        }
+        .button {
+            font-size: 14px;
         }
     }
 }
