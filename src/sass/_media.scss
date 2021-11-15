@@ -23,7 +23,7 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
     .carousel {
         .prev {
             display: none;
@@ -72,6 +72,12 @@
         }
         .feed-form {
             width: 270px;
+        }
+    }
+    .catalog {
+        padding: 0 50px 100px 50px;
+        &__content {
+            justify-content: space-around;
         }
     }
 }
@@ -150,6 +156,41 @@
             width: 250px;
         }
     }
+    .carousel {
+        padding: 40px 0;
+    }
+    .catalog {
+        padding: 0;
+        padding-bottom: 60px;
+        .title {
+            margin-bottom: 40px;
+        }
+        &__tabs {
+            margin-top: 40px;
+        }
+        &__tab {
+            font-size: 14px;
+            transform: skewX(-18deg);
+            margin: 0 3px;
+            div {
+                position: absolute;
+                width: 120%;
+                left: -10%;
+                transform: skewX(18deg);
+            }
+        }
+        &__content {
+            margin-top: 40px;
+            flex-direction: column;
+            align-items: center;
+        }
+        &-item {
+            min-height: 400px;
+            &__img {
+                height: 160px;
+            }
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -189,6 +230,7 @@
             flex-direction: column;
             align-items: center;
             margin-top: 10px;
+            width: 100%;
         }
         &__icon {
             margin-bottom: 10px;
@@ -218,6 +260,53 @@
         }
         .button {
             font-size: 14px;
+        }
+    }
+    .carousel {
+        padding: 32px 0;
+    }
+    .catalog {
+        padding-top: 10px;
+        .container {
+            padding: 0 30px;
+        }
+        .title {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+        &__tabs {
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        &__tab {
+            margin-top: 10px;
+        }
+        &-item {
+            max-width: 100%;
+            min-height: 300px;
+            &__img {
+                height: 120px;
+            }
+            &__list {
+                li {
+                    font-size: 12px;
+                }
+            }
+            hr {
+                margin: 13px 0 13px 0;
+            }
+            &__price {
+                font-size: 17px;
+            }
+            &__descr {
+                width: 200px;
+                margin: 16px auto 0 auto;;
+            }
+        }
+    }
+    .button {
+        &_mini {
+            width: 115px;
         }
     }
 }
