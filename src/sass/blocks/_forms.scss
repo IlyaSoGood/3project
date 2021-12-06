@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     width: 300px;
+    margin: 0 auto;
     input {
         height: 50px;
         border-radius: 5px;
@@ -17,4 +18,7 @@
             margin-bottom: 20px;
         }
     }
-}
+    &_mt25 {
+        margin-top: 25px;
+    }
+} 
