@@ -149,13 +149,13 @@ $(document).ready(function(){
         }
     });
 
-    /* $("a[href^='#']").click(function() {
+    $("a[href^='#up']").click(function() {
         const _href = $(this).attr("href");
         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
         return false;
-    }); */
+    });
     
-    $("a[href^='#']").on('click', function(event) {
+    /* $("a[href^='#']").on('click', function(event) {
 
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
@@ -175,7 +175,7 @@ $(document).ready(function(){
                 window.location.hash = hash;
             });
         } // End if
-    });
+    }); */
 
     new WOW().init();
 });
