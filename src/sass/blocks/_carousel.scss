@@ -30,5 +30,27 @@
             margin: 0 auto;
         }
     }
+    .tns-nav {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        button {
+            width: 70px;
+            height: 15px;
+            margin: 0 40px;
+            background: none;
+            border: solid 2px #d0d0d0;
+            transform: skewX(-25deg);
+            cursor: pointer;
+            &:hover {
+                box-shadow: 3px 3px 20px $main-color;
+                border: none;
+            }
+        }
+        .tns-nav-active {
+            background-color: $main-color;
+            border: none;
+        }
+    }
 }
 
